@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
     border: 0;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -74,6 +74,8 @@ p {
     margin: 0 auto;
 }
 
+/* code for header on homepage and about page */
+
 header {
     display: flex;
     flex-flow: row wrap;
@@ -94,6 +96,8 @@ header nav a {
     text-decoration: none;
 }
 
+/* code for top content on homepage and about page */
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -108,10 +112,14 @@ header nav a {
     padding-bottom: 20px;  
 }
 
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+/* code for top content on about page */
+
+.top-content .about-text-container {
+    width: 100%;
+    padding-left: 2%;
 }
+
+/* code for about page middle section */
 
 .about-middle-section {
     display: flex;
@@ -120,6 +128,34 @@ header nav a {
 
 .about-middle-section div {
     width: 50%;
+    padding: 1% 2%;
+}
+
+.about-middle-section div div {
+	width: 100%;
+	padding: 2% 0% 5%;
+    border-bottom: 1px dashed black;
+    margin-bottom: 12%
+}
+
+.about-middle-section div button {
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+	border-radius: 8px;
+	border: 2px solid black;
+	width: 35%;
+	padding: 2% 0%;
+}
+
+.about-middle-section div p {
+	padding-bottom: 5%;
+}
+
+/* code for homepage middle section */
+
+.middle-content {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
 }
 
 .middle-content h2 {
@@ -144,6 +180,8 @@ header nav a {
     justify-content: center;
 }
 
+/* code for bottom content on homepage and about page */
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -157,6 +195,14 @@ header nav a {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+/* code for bottom content on about page */
+
+.about-bottom-content {
+    padding-bottom: 2%;
+}
+
+/* code for footer on homepage and about page */
 
 footer {
     width: 100%;
