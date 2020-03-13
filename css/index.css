@@ -18,7 +18,8 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+    border: 0;
+    /* border: 1px solid grey; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -62,6 +63,8 @@ h1, h2, h3, h4, h5 {
     font-family: 'Rubik', sans-serif;
 }
 
+/* reset ends here */
+
 p {
     line-height: 1.4;
 }
@@ -70,6 +73,30 @@ p {
     width: 800px;
     margin: 0 auto;
 }
+
+/* code for header on homepage and about page */
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-bottom: 3%;
+}
+
+header nav {
+	display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding: 3% 0% 5%;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+}
+
+/* code for top content on homepage and about page */
 
 .top-content {
     display: flex;
@@ -84,6 +111,47 @@ p {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
+
+/* code for top content on about page */
+
+.top-content .about-text-container {
+    width: 100%;
+    padding-left: 2%;
+}
+
+/* code for about page middle section */
+
+.about-middle-section {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.about-middle-section div {
+    width: 50%;
+    padding: 1% 2%;
+}
+
+.about-middle-section div div {
+	width: 100%;
+	padding: 2% 0% 5%;
+    border-bottom: 1px dashed black;
+    margin-bottom: 12%
+}
+
+.about-middle-section div button {
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+	border-radius: 8px;
+	border: 2px solid black;
+	width: 35%;
+	padding: 2% 0%;
+}
+
+.about-middle-section div p {
+	padding-bottom: 5%;
+}
+
+/* code for homepage middle section */
 
 .middle-content {
     margin-bottom: 20px;
@@ -112,6 +180,50 @@ p {
     justify-content: center;
 }
 
+/* code for box colors on homepage */
+
+.middle-content .boxes .box1 {
+    background-color: teal;
+}
+
+.middle-content .boxes .box2 {
+    background-color: gold;
+}
+
+.middle-content .boxes .box3 {
+    background-color: cadetblue;
+}
+
+.middle-content .boxes .box4 {
+    background-color: coral;
+}
+
+.middle-content .boxes .box5 {
+    background-color: crimson;
+}
+
+.middle-content .boxes .box6 {
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box7 {
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box8 {
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box9 {
+    background-color: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background-color: dodgerblue;
+}
+
+/* code for bottom content on homepage and about page */
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -125,6 +237,14 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+/* code for bottom content on about page */
+
+.about-bottom-content {
+    padding-bottom: 2%;
+}
+
+/* code for footer on homepage and about page */
 
 footer {
     width: 100%;
